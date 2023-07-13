@@ -1,0 +1,19 @@
+
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 19px;
+    color: black;
+    
+}
+
+h1, h2{
+    font-family: 'Tilt Prism', cursiva;
+    font-size: 1.5em;
+    font-weight: normal;
+    
+}
+
+p{
+    font-family: 'Kablammo', cursive;
+}
