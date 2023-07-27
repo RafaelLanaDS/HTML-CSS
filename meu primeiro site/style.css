@@ -1,6 +1,9 @@
-
+* {
+    margin: 0;
+}
 
 body {
+    max-width: 1200px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     background-image: linear-gradient(to right, rgb(156, 56, 56), rgb(163, 163, 62) );
     }
@@ -19,6 +22,31 @@ body {
 
 fieldset {
     border: 3px solid rgb(255, 64, 30);
+    width: 1200px;
+}
+
+@media(max-width:1200px) {
+    fieldset {
+        width: 1000px;
+    }
+}
+
+@media(max-width:1024px){
+    fieldset {
+        width:700px ;
+    }
+}
+
+@media(max-width: 768px){
+    fieldset {
+        width: 400px;
+    }
+}
+
+@media(max-width:425px){
+    fieldset {
+        width: 320px;
+    }
 }
 
 legend {
@@ -70,3 +98,4 @@ legend {
 #submit:hover {
     background-image: linear-gradient(to right, rgb(180, 36, 36), rgb(139, 139, 12));
 }
+
