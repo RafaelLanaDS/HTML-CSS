@@ -33,27 +33,10 @@ fieldset {
 
 }*/
 
-@media(max-width: 1200px) {
-    form, .box{
-        max-width: 800px;
-    }
-}
-
-@media(max-width:824px){
-    form, .box{
-         width:300px ;
-     }
- }
-
- @media(max-width:324px){
-    form, .box{
-         width:200px ;
-     }
- }
 body {
     max-width: 1200px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(156, 56, 56), rgb(163, 163, 62) );
+    
     }
 
 .box {
