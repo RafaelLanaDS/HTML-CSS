@@ -1,7 +1,55 @@
-* {
-    margin: 0;
+
+
+
+/*
+background-color: rgba(0, 0, 0, 0.8 );
+
+@media(max-width:1200px) {
+    .box {
+        width: 1000px;
+       
+    }
 }
 
+@media(max-width:1024px){
+   .box{
+        width:700px ;
+    }
+}
+
+@media(max-width: 768px){
+    .box {
+        width: 400px;
+    }
+}
+
+@media(max-width:425px){
+    .box{
+        width: 320px;
+    }
+}
+fieldset {
+    border: 3px solid rgb(255, 64, 30);
+
+}*/
+
+@media(max-width: 1200px) {
+    form, .box{
+        max-width: 800px;
+    }
+}
+
+@media(max-width:824px){
+    form, .box{
+         width:300px ;
+     }
+ }
+
+ @media(max-width:324px){
+    form, .box{
+         width:200px ;
+     }
+ }
 body {
     max-width: 1200px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -14,7 +62,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) ;
-    background-color: rgba(0, 0, 0, 0.8 );
+    
     padding: 15px;
     border-radius: 15px;
     width: 25%;
@@ -22,31 +70,7 @@ body {
 
 fieldset {
     border: 3px solid rgb(255, 64, 30);
-    width: 1200px;
-}
-
-@media(max-width:1200px) {
-    fieldset {
-        width: 1000px;
-    }
-}
-
-@media(max-width:1024px){
-    fieldset {
-        width:700px ;
-    }
-}
-
-@media(max-width: 768px){
-    fieldset {
-        width: 400px;
-    }
-}
-
-@media(max-width:425px){
-    fieldset {
-        width: 320px;
-    }
+    max-width: 1200px;
 }
 
 legend {
