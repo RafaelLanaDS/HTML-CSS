@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 001</title>
     <style>
+        * {
+            height: justify;
+        }
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        table {
+        table {     
             width: 300px; 
         }
         td {
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.582);
+            border-radius: 10px;     
             border: 1px solid black;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
+        }
+        .cor {
+            /* to BOTTOM,RIGHT, LEFT, top OU EM GRAUS 90 */
+            background-image: linear-gradient(to bottom, rgba(184, 134, 41, 0.507), rgba(54, 54, 207, 0.411));
         }
     </style>
 </head>
@@ -24,7 +33,7 @@
         <tr>  <!--primeira linha-->
             <td>1</td>
             <td>2</td>
-            <td rowspan="2">3</td>
+            <td rowspan="2"  class="cor">3</td>
             <td>4</td>
         </tr>
         <tr>  <!--primeira linha-->
@@ -34,13 +43,13 @@
             <td>7</td>
         </tr>
         <tr>  <!--primeira linha-->
-            <td colspan="3">8</td>
+            <td colspan="3"  class="cor">8</td>
             <td>9</td>
             
         </tr>
         <tr>  <!--primeira linha-->
-            <td rowspan="2" >10</td>
-            <td colspan="2">11</td>
+            <td rowspan="2"  class="cor" >10</td>
+            <td colspan="2"  class="cor">11</td>
             <td>12</td>
          
         </tr>
@@ -55,11 +64,11 @@
     <h1>Desafio 2</h1>
     <table>
         <tr>
-            <td colspan="4">A</td>
-            <td rowspan="4">B</td>
+            <td colspan="4"  class="cor">A</td>
+            <td rowspan="4"  class="cor">B</td>
         </tr>
         <tr>
-            <td rowspan="4">C</td>
+            <td rowspan="4"  class="cor">C</td>
             <td>D</td>
             <td>E</td>
             <td>F</td>
@@ -75,7 +84,7 @@
             <td>M</td>
         </tr>
         <tr>
-            <td colspan="4">N</td>
+            <td colspan="4"  class="cor">N</td>
         </tr>
     </table>
 </html>
