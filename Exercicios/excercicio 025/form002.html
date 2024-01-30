@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="iusu" id="iusu" required size="15" placeholder="Nome do Usuário">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="isen" id="isen" required minlength="8" maxlength="15" placeholder="Minimo 8 caracteris">
+        </p>
+        <p>
+            <input type="submit"  value="Enviar">
+            <input type="reset" value="Linpar">
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="ifoto" id="ifoto" accept="image/*">
+        </p>
+        <p>
+            <label for="Iidade">Idade:</label>
+            <input type="number" name="Iidade" id="Iidade" min="1" max="120" value="20">
+        </p>
+        <p>
+            <fieldset style="width: 100px;">
+                <legend>Sexo</legend>
+                <input type="radio" name="sex" id="isexmasc" checked>
+                <label for="isexmasc">Masculino</label>
+                <input type="radio" name="sex" id="isexfem" >
+                <label for="isexfem">Feminino</label>
+            </fieldset>
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="tel" pattern="" placeholder="(xx)xxxx-xxxx">
+        </p>
+        <p>
+            <label for="imal">E-mail</label>
+            <input type="email" name="E-mail" id="E-mail" size="30" maxlength="50">
+        </p>
+        <p>
+            <label for="imes">Mes de aniversario:</label>
+            <input type="month" name="imes" id="imes">
+        </p>
+        <p>
+            <label for="idata">dia da compra</label>
+            <input type="date" name="idata" id="idata">
+        </p>
+        <p>
+            <label for="ihora">Hora da comprar</label>
+            <input type="time" name="ihora" id="ihora">
+        </p>
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="icor" id="icor"  value="#00000">
+        </p>
+        <p>
+            <label for="isat">Nivel de satisfação</label>
+            <input type="range" name="isat" id="isat" min="0" max="4" value="2">
+        </p>
+        <p>
+           <input type="checkbox" name="aceito" id="iaceito">
+           <label for="iaceito">Aceito os <a href="#"></a>Termos de uso</label>
+        </p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
