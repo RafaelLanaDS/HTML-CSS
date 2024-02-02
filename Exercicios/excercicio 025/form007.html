@@ -27,15 +27,29 @@
             </select>
         </fieldset>
         <fieldset>
-            <label for="iprof">Profissão</label>
-            <input type="text" name="prof" id="Istprof" list="Istprof">
-            <datalist id="Istprof">
-                <option value="">Adiministrativo</option>
-                <option value="">Comtabiliadade</option>
-                <option value="">Desenvolvedor</option>
-                <option value="">Professor</option>
-            </datalist>
+            <label for="iprf">Profissoes</label>
+            <section name="Profissoes" id="iprf">
+                <option value="" selected>----Escolha----</option>
+                <optgroup label="Profissoes de tecnologia">
+                    <option value="ADS">Analise e desenvolvimento de sistemas</option>
+                    <option value="TF">Tecnologia da informação</option>
+                    <option value="AS">Analise de dados</option>
+                    <option value="BD">Banco de dados</option>
+                </optgroup>
+            </section>
         </fieldset>
+
+        <!-- 
+                <label for="ice-cream-choice">Choose a flavor:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+            <datalist id="ice-rceam-flavors">
+                <option value="Chocolate"></option>
+                <option value="Coconut"></option>
+                <option value="Mint"></option>
+                <option value="Strawberry"></option>
+                <option value="Vanilla"></option>
+            </datalist> 
+        -->
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Linpar">
