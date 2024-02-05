@@ -26,18 +26,21 @@
                 </optgroup>
             </select>
         </fieldset>
-        <fieldset>
-            <label for="iprf">Profissoes</label>
-            <section name="Profissoes" id="iprf">
-                <option value="" selected>----Escolha----</option>
-                <optgroup label="Profissoes de tecnologia">
-                    <option value="ADS">Analise e desenvolvimento de sistemas</option>
-                    <option value="TF">Tecnologia da informação</option>
-                    <option value="AS">Analise de dados</option>
-                    <option value="BD">Banco de dados</option>
-                </optgroup>
-            </section>
-        </fieldset>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Administrativo</option>
+                <option >Contabilista</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+                <option >Mecanico</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
 
         <!-- 
                 <label for="ice-cream-choice">Choose a flavor:</label>

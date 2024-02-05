@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outros fromatos de form</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Exenplo de Formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <fieldset>
-            <legend>Sexo</legend>
-            <input type="radio" name="sexo" id="isxmas">
-            <label for="isxmas"> Masculino</label> <br>
-            <input type="radio" name="sexo" id="isxfev">
-            <label for="isxfev">Feminino</label>
-        </fieldset>
-        
+        <p>
+            <label for="inum">Numero</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival"> 5</output>
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Linpar">
